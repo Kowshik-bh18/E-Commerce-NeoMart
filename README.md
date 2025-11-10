@@ -1,114 +1,60 @@
-# NeoMart
+<h1 align="center">🛒 E-Commerce NeoMart</h1>
+<p align="center">
+  <em>Redefining Online Shopping, the Smart Way.</em><br/>
+  A next-generation full-stack e-commerce platform built with <b>Django REST Framework</b> and <b>React</b>, featuring authentication, order management, AI-powered chatbot, and seamless checkout experience.
+</p>
 
-A full-stack e-commerce application built with Django REST Framework and React.
+---
 
-## Features
+## 🚀 Tech Stack
 
-- User authentication with JWT
-- Product catalog with categories
-- Shopping cart functionality
-- Order management
-- Product recommendations
-- Invoice generation
-- Search and filtering
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,django,react,sqlite,html,css,js" alt="Tech Stack Logos" />
+</p>
 
-## Tech Stack
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Backend-Django%20REST%20Framework-092E20?style=for-the-badge&logo=django&logoColor=white"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Frontend-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/UI-Chakra%20UI-319795?style=for-the-badge&logo=chakraui&logoColor=white"/></a>
+</p>
 
-### Backend
+---
 
-- Django
-- Django REST Framework
-- SimpleJWT for authentication
-- drf-yasg for API documentation
-- SQLite database
+## 🌟 Features
 
-### Frontend
+- 🔐 **JWT Authentication** — Secure login, signup, and token-based sessions  
+- 🛍️ **Product Catalog** — Categorized product listings with advanced filters  
+- 🛒 **Shopping Cart** — Persistent cart with live updates  
+- 📦 **Order Management** — Complete checkout and order tracking system  
+- 💬 **AI Chatbot Assistant** — Product recommendation and Q&A bot  
+- 🧾 **Invoice Generation** — Auto-generated PDF invoices after checkout  
+- 🔎 **Search & Filtering** — Smart product search via Django filters  
+- 🧭 **Admin Dashboard** — Manage products, users, and orders  
 
-- React
-- Chakra UI
-- React Router
-- Axios
+---
 
-## Setup
-
-### Backend Setup
-
-1. Create a virtual environment:
+## ⚙️ Backend Setup (Django + DRF)
 
 ```bash
+# 1. Create a virtual environment
 python -m venv .venv
-```
 
-2. Activate the virtual environment:
-
-```bash
+# 2. Activate environment
 # Windows
 .venv\Scripts\activate
-
 # Linux/Mac
 source .venv/bin/activate
-```
 
-3. Install dependencies:
-
-```bash
+# 3. Install dependencies
 cd backend
 pip install -r requirements.txt
-```
 
-4. Run migrations:
-
-```bash
+# 4. Run migrations
 python manage.py migrate
-```
 
-5. Load sample data:
-
-```bash
+# 5. Load sample data (optional)
 python scripts/seed.py
-```
 
-6. Start the development server:
-
-```bash
+# 6. Start development server
 python manage.py runserver
-```
-
-### Frontend Setup
-
-1. Install dependencies:
-
-```bash
-cd frontend
-npm install
-```
-
-2. Start the development server:
-
-```bash
-npm start
-```
-
-## API Documentation
-
-API documentation is available at:
-
-- Swagger UI: `http://localhost:8000/swagger/`
-- ReDoc: `http://localhost:8000/redoc/`
-
-## Testing
-
-To run backend tests:
-
-```bash
-cd backend
-python manage.py test
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
